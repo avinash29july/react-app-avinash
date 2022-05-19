@@ -1,0 +1,67 @@
+.overflowContainer {
+  max-width: 100%;
+  overflow-x: auto;
+}
+.reactTable {
+  border-spacing: 0;
+  border: 0.5px solid #bbbbbb;
+  border-collapse: collapse;
+  width: 100%;
+  tr {
+    :last-child {
+      td {
+        border-bottom: 0;
+      }
+    }
+    &:first-child {
+      th {
+        background: #2d4ff0;
+        color: #ffffff;
+        border-color: #2d4ff0;
+      }
+    }
+    &:not(&:first-child) {
+      th {
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.18857965549501055) 0%,
+          rgba(224, 224, 224, 1) 100%
+        );
+      }
+    }
+  }
+  th,
+  td {
+    margin: 0;
+    padding: 0.5rem;
+    border-bottom: 0.5px solid #bbbbbb;
+    border-right: 0.5px solid #bbbbbb;
+    :last-child {
+      border-right: 0;
+    }
+    input {
+      font-size: 1rem;
+      padding: 4px 6px;
+      margin: 0;
+      border: 0;
+    }
+  }
+}
+.pagination {
+  padding: 0.5rem 0;
+  input {
+    padding: 4px 6px;
+    width: 50px;
+    margin: 0 5px;
+  }
+  button {
+    padding: 4px 6px;
+    margin: 0 2px;
+  }
+  select {
+    padding: 5px 6px;
+    width: 100px;
+    margin: 0 2px;
+  }
+}
